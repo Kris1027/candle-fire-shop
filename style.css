@@ -497,7 +497,7 @@ header{
     box-shadow: 0 0 20px 3px black;
     font-size: 1.8rem;
     color: brown;
-    background-image: url(images/main-background.svg);
+    background-color: #eaeaea;
     font-family: 'Lobster', cursive;
 }
 
@@ -507,6 +507,7 @@ header{
     color: brown;
     text-shadow: 2px 2px 2px black;
 }
+
 .contact-left input{
     width:80%;
     height:40px;
@@ -514,16 +515,18 @@ header{
     border-radius: 20px;
     box-shadow: 0 0 20px 3px black;
     font-size: 1.8rem;
-    color: brown;
-    text-shadow:1px 1px 2px white;
-    background-image: url(images/main-background.svg);
+    color:rgb(255, 158, 31);
+    text-shadow: 1px 1px 1px white;
+    background-color: #eaeaea;
     font-family: 'Lobster', cursive;
 }
 
 .contact-left input[type=submit]{
     width:50%;
     cursor:pointer;
-    padding:0;
+    padding: 0;
+    background-image: url(images/header-background.svg);
+
 }
 
 .contact-right{
