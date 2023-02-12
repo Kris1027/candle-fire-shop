@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../fonts/css/fontello.css">
+    <link rel="stylesheet" href="../mobilefont/css/fontello.css">
+    <title>Shop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <span>Candle</span><span>F</span><img src="/images/candle-logo.png"><span>re</span>
+            </a>
+        </div>
+        <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Wyszukaj...">
+            <i class="icon-search"></i>
+        </div>
+        <div class="basket-adds">
+            <i class="icon-basket"></i>
+            <div class="basket-adds-number">4</div>
+        </div>
+        <div class="hamburger active">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu-mobile active">
+            <a href="../index.html"><i class="icon-home"></i></a>
+            <a href="#"> <i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-basket"></i></a>
+            <a href="./contact.html"><i class="icon-mail-alt"></i></a>
+        </div>
+        <div class="normal-menu active">
+           <span class="home"> <a href="../index.html"><i class="icon-home"></i><p>Strona Główna</p></a></span>
+           <span class="shop"> <a href="#"><i class="icon-basket"></i><p>Sklep</p></a></span>
+           <span class="contact"> <a href="./contact.html"><i class="icon-mail-alt"></i><p>Kontakt</p></a></span>
+        </div>
+    </header>
+    <main>
+        <div class="basket-card">
+            <div class="basket-card-purchase">
+                <div class="basket-exit">
+                    <h1>Twój Koszyk</h1>
+                    <button class="exit-btn">X</button>
+
+                </div>
+                <div class="purchase">   
+                    
+                </div>
+                <div class="purchase-shop-value">
+                    <button class="clear-basket">Wyczyść</button>
+                    <span>Suma: <p class="suma"></p>zł</span>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar-mobile">
+            <input class="search-bar-mobile-input" type="text" placeholder="Wyszukaj...">
+        </div>
+        
+        <div class="main-products">
+        </div>
+        <p class="empty-state active">Niestety nic nie znalazłem...</p>
+    </main>
+    <footer>
+        <div class="social">
+            <i class="icon-facebook"></i>
+            <i class="icon-youtube"></i>
+            <i class="icon-twitter"></i>
+            <i class="icon-gmail"></i>
+        </div>
+    </footer>
+    <script src="../products.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

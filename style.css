@@ -56,6 +56,10 @@ header{
     margin:0 -8px;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 .search-bar{
     display:flex;
     align-items: center;
@@ -303,7 +307,8 @@ header{
 }
 
 .product-item:hover{
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: shadow-drop-2-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .product-name{
@@ -333,7 +338,7 @@ header{
 
 .product-item button{
     width:70%;
-    height:45px;
+    height: 45px;
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 20px;
@@ -701,26 +706,32 @@ footer .logo span:last-child{
     }
 }
 
-@keyframes heartbeat {
-    from {
-      transform: scale(1);
-      transform-origin: center center;
-      animation-timing-function: ease-out;
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
-    10% {
-      transform: scale(0.91);
-      animation-timing-function: ease-in;
-    }
-    17% {
-      transform: scale(0.98);
-      animation-timing-function: ease-out;
-    }
-    33% {
-      transform: scale(0.87);
-      animation-timing-function: ease-in;
-    }
-    45% {
-      transform: scale(1);
-      animation-timing-function: ease-out;
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
